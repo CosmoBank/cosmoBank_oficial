@@ -7,13 +7,16 @@ import { ServicoType } from 'src/types/ServicoType';
   styleUrls: ['./servicos.component.scss'],
 })
 export class ServicosComponent {
-  public itens: ServicoType[] = [
-    { name: 'Carteira Digital Holográfica', img: '../img/carteira.png' },
-    { name: 'Caixa Eletrônico Robô', img: '../img/caixa-robo.png' },
+  public items: ServicoType[] = [
+    { name: 'Carteira Digital Holográfica', img: './assets/img/carteira.png' },
+    { name: 'Caixa Eletrônico Robô', img: './assets/img/caixa-robo.png' },
     {
       name: 'Financiamento de Lotes Intergaláctico',
-      img: '../img/financiamento.png',
+      img: './assets/img/financiamento.png',
     },
-    { name: 'Plano de Fidelidade CosmoBank', img: '../img/fidelidade.png' },
+    {
+      name: 'Plano de Fidelidade CosmoBank',
+      img: './assets/img/fidelidade.png',
+    },
   ];
 }
