@@ -1,0 +1,119 @@
+@import '../../../styles.scss';
+
+footer {
+  width: 100vw;
+  background-color: $bg-color;
+  font-family: $font-family;
+  color: #FFFFFF;
+}
+
+::ng-deep .panel-default {
+  border: none;
+}
+
+::ng-deep .card-header, ::ng-deep .card-body {
+  background-color: $bg-color;
+  color: #FFFFFF;
+}
+
+.top-footer, .bottom-footer {
+  display: flex !important;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  list-style: none;
+  color: #FFFFFF;
+  font-weight: 400;
+  display: flex;
+}
+
+
+button {
+  width: 15%;
+  padding: 12px 24px;
+  background-color: #45C4B3;
+  color: $bg-color;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: color 0.4s, background-color 0.4s, box-shadow 0.4s;
+  &:hover {
+    color: $bg-color;
+    background-color: #45C4B3;
+    box-shadow: 0 0 10px #45C4B3;
+
+  }
+}
+
+.accordion-header {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+.btn-accordion {
+  background-color: transparent;
+  width: fit-content;
+  height: fit-content;
+  border: none;
+}
+.btn-accordion i {
+  color: #FFFF;
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 200px) and (max-width:767.5px)  {
+  .top-footer {
+    display: none !important;
+    border: solid 4px red;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 1200px) {
+  button {
+    font-size: 10px;
+    padding: 8px 12px;
+    width: 150px;
+  }
+  li {
+    font-size: 14px ;
+  }
+}
+
+@media only screen   and (min-width: 600px)and (max-width: 700px)  {
+  button {
+    font-size: 10px;
+    padding: 4px 8px;
+    width: 120px;
+  }
+  li {
+    font-size: 13px ;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 600px)  {
+  button {
+    font-size: 10px;
+    width: 122px;
+  }
+  li {
+    font-size: 10px ;
+  }
+}
+
+
+@media only screen  and (min-width: 400px) and (max-width: 500px) {
+  li {
+    font-size: 9px ;
+    // background-color:rgb(128, 128, 45);
+  }
+}
+
+

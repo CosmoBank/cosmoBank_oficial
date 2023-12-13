@@ -1,0 +1,53 @@
+<footer class="container-fluid fixed-bottom">
+  <div class="row">
+    <section class="top-footer col-md-6 d-none d-md-block">
+      <ul *ngFor="let item of itemsFooter">
+        <p class="fw-bolder">{{ item.title }}</p>
+        <li class="mb-2" *ngFor="let listItem of item.list">{{ listItem }}</li>
+      </ul>
+    </section>
+    <div class="col-12 d-md-none top-accordion py-4">
+      <ng-container *ngFor="let item of itemsFooter">
+        <accordion [isAnimated]="true" ngClass="accordion">
+          <accordion-group [isOpen]="false" #mygroup class="mt-2">
+            <h5 accordion-heading ngClass="accordion-header" class="fw-bolder">
+              {{ item.title }}
+              <button ngClass="btn-accordion">
+                <i
+                  class="ph"
+                  [ngClass]="{
+                    'ph-caret-up': mygroup?.isOpen,
+                    'ph-caret-down': !mygroup?.isOpen
+                  }"
+                ></i>
+              </button>
+            </h5>
+            <ul class="pl-1">
+              <li
+                class="text-light fs-6 p-1"
+                *ngFor="let listItem of item.list"
+              >
+                {{ listItem }}
+              </li>
+            </ul>
+          </accordion-group>
+        </accordion>
+      </ng-container>
+    </div>
+  </div>
+
+  <hr class="hr" />
+  <div class="row">
+    <section class="bottom-footer align-items-center">
+      <div class="mx-4">
+        <p>© 2023 CosmoBank, Inc</p>
+        <p class="col-6">
+          Projeto desenvolvido por alunos do programa Santander Coders 2023 com
+          o intuito de representar um banco futurista.
+        </p>
+      </div>
+      <button>CONHECER DESENVOLVEDORES</button>
+    </section>
+  </div>
+  <div class="row"></div>
+</footer>
