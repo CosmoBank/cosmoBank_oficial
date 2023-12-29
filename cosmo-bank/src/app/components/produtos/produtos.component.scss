@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Noto+Sans:wght@500&family=Roboto+Slab:wght@300;400&family=Tektur:wght@500&display=swap');
+
+p,h2{
+     font-family:'Noto Sans', sans-serif;
+}
+
+h2{
+     font-weight: 700;
+     margin-left: 2rem;
+}
+
+p{
+     font-weight: 600;
+}
+
+.produtos{
+     margin-top: 1rem;
+     display: flex;
+     justify-content: space-around;
+
+     button{
+          background: none;
+          border: none;
+          cursor: pointer;
+     }
+}
+
+.produtoUnidade{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     background-color: #F0F8F9;
+     border-radius: 20px;
+     width: 186px;
+     height: 208px;
+     flex-shrink: 0;
+     box-shadow: -4px -4px 4px 0px rgba(0, 0, 0, 0.25), 4px 4px 4px 0px rgba(15, 21, 34, 0.25);
+     padding: 1rem;
+    
+}
+
+.iconeProduto{
+     height: 113px;
+     width: 135px;
+}
