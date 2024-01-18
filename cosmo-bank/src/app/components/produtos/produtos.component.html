@@ -1,0 +1,20 @@
+<h2>Olha o que temos</h2>
+<section class="produtos">
+     <button>
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="80" viewBox="0 0 28 104" fill="none">
+               <path d="M26 1L2 53L26 103" stroke="#07242E" stroke-width="3"/>
+             </svg>
+     </button>
+     <section *ngFor="let produto of listaProdutos">
+          <div class="produtoUnidade">
+               <img src={{produto.urlProduto}} class="iconeProduto">
+               <p>{{produto.nome}}</p>
+
+          </div>
+     </section>
+     <button>
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="80" viewBox="0 0 28 104" fill="none">
+               <path opacity="0.8" d="M2 103L26 51L2 1" stroke="#07242E" stroke-width="3"/>
+               </svg>
+     </button>
+</section>

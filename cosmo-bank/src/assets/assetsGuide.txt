@@ -1,0 +1,3 @@
+produto1 - icone robô
+produto2 - icone aposentadoria
+produto3 - icone parcelamento
